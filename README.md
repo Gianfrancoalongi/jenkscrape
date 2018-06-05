@@ -13,6 +13,7 @@ Depends on JQ - you should get that installed for command line JASON parsing
 Usage: ./jenskcrape.bash IPORNAMETOYOURJENKINS
 
 
+
      ██╗███████╗███╗   ██╗██╗  ██╗███████╗ ██████╗██████╗  █████╗ ██████╗ ███████╗
      ██║██╔════╝████╗  ██║██║ ██╔╝██╔════╝██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝
      ██║█████╗  ██╔██╗ ██║█████╔╝ ███████╗██║     ██████╔╝███████║██████╔╝█████╗  
@@ -23,5 +24,10 @@ Usage: ./jenskcrape.bash IPORNAMETOYOURJENKINS
                                                                  by maraud3r
 [*] Scraping will be stored in /tmp/tmp.1HTFmkGLFI
 [*] Collecting job list...............DONE
-[*] Scraping jobs.............[324/1145]
+[*] Scraping jobs.....................DONE
+[*] Sorting and fixing up output......DONE
+
 ```
+
+You will find the scrapes in the named directory as /tmp/tmp.1HTFmkGLFI/scrapings.res - it will be sorted, and containing no duplicates.
+All pulled data is removed during the process to avoid bloating your system during scraping.
