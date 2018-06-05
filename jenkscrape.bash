@@ -36,7 +36,7 @@ do
     SSH="ssh \w+\@"
     CURL="curl "
     DB="mysql |psql |mongo "
-    HTTP="https:// |http:// "
+    HTTP="(https|http):// "
     PASS="password |passphrase |pwd |credentials |userpass "
     grep -Pa "(${GIT}|${AWS}|${TAR}|${SSH}|${CURL}|${HTTP}|${PASS})" ${SCRAPEFILE} >> ${SCRAPEDIR}/scraping.res
 
