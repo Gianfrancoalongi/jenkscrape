@@ -1,10 +1,13 @@
 # jenkscrape
 Jenkins Scraper For Penetration Testing
 
-Jenkins Scraper automatically traverses all visible jobs and scrapes them for interesting stuff.
-Right now only unauthed params, next step will be to support authtokens.
+Jenkins Scraper is an automatic tool to quickly traverse vast amounts of possibly accessable Jenkins Console Outputs.
+If during an engagement you find yourself being able to list jenkins jobs, and you think there might be credentials in there, then this tool is for you!
+
+Right now this proof of concept only supports unauthed jenkin API calls, next step will be to support authtokens.
 
 Depends on JQ - you should get that installed for command line JASON parsing
+
 
 ```
 Usage: ./jenskcrape.bash IPORNAMETOYOURJENKINS
