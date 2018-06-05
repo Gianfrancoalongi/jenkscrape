@@ -1,4 +1,7 @@
 #!/bin/bash
+
+command -v jq >/dev/null 2>&1 || { echo >&2 "jq needed - install it"; exit 1; }
+
 cat<<1337
 
 
@@ -32,9 +35,10 @@ do
     TAR="tar -?[xvfz] "
     SSH="ssh \w+\@"
     CURL="curl "
-    DB="mysql -|psql -|mongo "
+    DB="mysql |psql |mongo "
+    HTTP="https:// |http:// "
     PASS="password |passphrase |pwd |credentials |userpass "
-    grep -Pa "(${GIT}|${AWS}|${TAR}|${SSH}|${CURL}|${PASS})" ${SCRAPEFILE} >> ${SCRAPEDIR}/scraping.res
+    grep -Pa "(${GIT}|${AWS}|${TAR}|${SSH}|${CURL}|${HTTP}|${PASS})" ${SCRAPEFILE} >> ${SCRAPEDIR}/scraping.res
 
     rm ${SCRAPEFILE}
     
