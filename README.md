@@ -33,5 +33,5 @@ Usage: ./jenskcrape.bash IPORNAMETOYOURJENKINS
 
 ```
 
-You will find the scrapes in the named directory as /tmp/tmp.1HTFmkGLFI/scrapings.res - it will be sorted, and containing no duplicates.
+You will find the scrapes in the named directory as /tmp/tmp.1HTFmkGLFI/scraping.res - it will be sorted, and containing no duplicates.
 All pulled data is removed during the process to avoid bloating your system during scraping.
