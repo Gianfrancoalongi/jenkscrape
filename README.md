@@ -6,6 +6,7 @@ Right now only unauthed params, next step will be to support authtokens.
 
 Depends on JQ - you should get that installed for command line JASON parsing
 
+```
 Usage: ./jenskcrape.bash IPORNAMETOYOURJENKINS
 
 
@@ -20,3 +21,4 @@ Usage: ./jenskcrape.bash IPORNAMETOYOURJENKINS
 [*] Scraping will be stored in /tmp/tmp.1HTFmkGLFI
 [*] Collecting job list...............DONE
 [*] Scraping jobs.............[324/1145]
+```
