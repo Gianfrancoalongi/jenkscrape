@@ -6,8 +6,12 @@ If during an engagement you find yourself being able to list jenkins jobs, and y
 
 Right now this proof of concept only supports unauthed jenkin API calls, next step will be to support authtokens.
 
-Depends on JQ - you should get that installed for command line JASON parsing
+Depends on JQ - you should get that installed for command line JSON parsing
+```
+apt-get install jq
+```
 
+This runs  perfectly well in a small console window - just run it and supply hostname or IP-address of your jenkins.
 
 ```
 Usage: ./jenskcrape.bash IPORNAMETOYOURJENKINS
